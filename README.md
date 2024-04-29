@@ -6,12 +6,12 @@ A simple toy that can measures strength of magnetic field
 ## 介绍
 为了估计线圈的磁场强度，我设计了这个磁感应强度测量装置，该装置可以测量±0.01~100mT的磁感应强度，精度5%。
 
-![外形](/Tesla-Meter/resource/IMG_20240429_212745.jpg)
+![外形](resource/IMG_20240429_212745.jpg)
 
 该磁感应测量装置的主控选择RP2040(Raspberry Pi Pico),采用Micropython开发，传感器采用MT9101，这是一款由MagnTek生产的高精度线性霍尔，能将霍尔片的所处位置的磁感应强度转为模拟量输出。ADC选择使用TM7705，这是一款由天微生产的16位sigma-delta ADC。数据显示采用数码管+RGB LED的组合，数码管显示磁感应强度大小，RGB LED显示方向
 
 #### 原理图
-![SCH](/Tesla-Meter/resource/SCH_Schematic.svg)
+![SCH](resource/SCH_Schematic.svg)
 
 ## 工作原理
 MT9101会在不同的磁场中根据磁通密度的不同产生不同强度的模拟量，无磁感线穿过霍尔片时候输出1/2 Vcc，有磁场时磁场越强，输出的模拟量偏离1/2 Vcc越多；根据磁场的方向不同，其输出偏离1/2 Vcc的方向也不同。
@@ -28,16 +28,16 @@ MT9101会在不同的磁场中根据磁通密度的不同产生不同强度的�
 
 ## 工作照
 ### 正常工作
-![work1](/Tesla-Meter/resource/IMG_20240429_212957.jpg)
-![work2](/Tesla-Meter/resource/IMG_20240429_213007.jpg)
+![work1](resource/IMG_20240429_212957.jpg)
+![work2](resource/IMG_20240429_213007.jpg)
 
 ### 测量地磁场
 朝东调零
-![zero](/Tesla-Meter/resource/IMG_0332.JPG)
+![zero](resource/IMG_0332.JPG)
 朝北
-![north](/Tesla-Meter/resource/IMG_0337.JPG)
+![north](resource/IMG_0337.JPG)
 朝南
-![south](/Tesla-Meter/resource/IMG_0338.JPG)
+![south](resource/IMG_0338.JPG)
 
 ## 碎碎念
 1. 这个板子拉线的时候脑抽把输入接反了，幸好TM7705支持双极性输入，只不过损失了一位有效数字
