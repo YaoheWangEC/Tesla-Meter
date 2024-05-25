@@ -17,6 +17,10 @@ The controller for this magnetic induction measurement device is the RP2040 (Ras
 #### Schematic Diagram 原理图
 ![SCH](resource/SCH_Schematic.svg)
 
+I've update this project [here](https://oshwhub.com/waterbird/mt9101-jian-yi-ci-qiang-ji).You can edit the shemestic and pcb with easy eda (professional) for youself.
+
+我已经传到立创开源广场了，你可以在[这里](https://oshwhub.com/waterbird/mt9101-jian-yi-ci-qiang-ji)找到原理图和PCB。
+
 ## Working Principle 工作原理
 The MT9101 generates varying analog output based on the magnetic flux density in different magnetic fields. When no magnetic field lines pass through the Hall sensor, it outputs 1/2 Vcc. As the magnetic field strength increases, the analog output deviates more from 1/2 Vcc. The direction of deviation also depends on the direction of the magnetic field.
 
